@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <script src="./knockout-3.4.2.js" type="text/javascript"></script>
+    <title>Knockout View Model Sample</title>
+
+</head>
+
+<body  id="koView">
+    <div>
+        Hello , My Name is
+        <span data-bind="text: Name"></span>. I'M
+        <span data-bind="text: Age"></span> years old.
+        Full Name: <span data-bind="text: nameWithAge"></span>
+        <input type="text" data-bind="value: Age" />
+    </div>
+    <button onclick="applyModel()">Apply Model</button>
+    <button onclick="clearBindings()">Clear Model</button>
+    <button onclick="changeMe()">Change Model</button>
+    <button onclick="disposeSubs()">Dispose Subscription</button>
+    <script>
+
+        var model = {
+            Name: ko.observable("Emrah"),
+            Age: ko.observable(17),
+            herhangiBirsey: "sdfsdfsd",
+            tarih: new Date()
+        };
+        model.Age.extend({notify:'always'});
+
+        model.nameWithAge = ko.computed(function(){
+            return model.Name() + " " + model.Age();
+        });
+
+       var subs = model.Age.subscribe(function(newValue){
+            console.log("Age Changed:" + newValue);
+        });
+
+
+        ko.applyBindings(model);
+      
+      function disposeSubs(){
+        subs.dispose();
+      }
+
+function applyModel(){
+    ko.applyBindings(model);
+}
+
+function clearBindings(){
+    ko.cleanNode(document.getElementById("koView"));
+}
+
+
+function changeMe(){
+    model.Name("svsdfsdf");
+}
+
+
+    </script>
+</body>
+
+</html>

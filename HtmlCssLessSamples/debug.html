@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DEBUG SAMPLE!</title>
+    <script>
+
+        var carmodelList = [
+            {
+                Brand: 'VW',
+                Model: 'Polo',
+                Year: 2018
+            }, {
+                Brand: 'Mercedes',
+                Model: 'C300',
+                Year: 2010
+            }, {
+                Brand: 'Seat',
+                Model: 'Ibiza',
+                Year: 2012
+            }, {
+                Brand: 'VW',
+                Model: 'CC',
+                Year: 2016
+            }
+        ];
+
+
+
+        function printCarList() {
+            setTimeout(function () {
+
+                for (var i = 0; i < carmodelList.length; i++) {
+                    console.log("Item No: " + i);
+                    console.log("Brand: " + carmodelList[i].Brand);
+                    console.log("Model: " + carmodelList[i].Model);
+                    console.log("Year: " + carmodelList[i].Year);
+                }
+
+            }, 3000);
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h1>Hello JS</h1>
+    <button onclick="printCarList()">List Items!</button>
+</body>
+
+</html>

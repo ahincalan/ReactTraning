@@ -1,0 +1,10 @@
+.borderRed {
+  border: 1px solid blue;
+}
+.blueTitle {
+  font-size: 12px;
+  color: #b3b9ff;
+  border: 1px solid blue;
+  width: 20%;
+  margin: 3px;
+}

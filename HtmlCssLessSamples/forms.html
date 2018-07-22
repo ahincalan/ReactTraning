@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1.0, user-scalable=no" />
+    <title>Hello World!</title>
+</head>
+
+<body>
+    <h1>Form Sample</h1>
+    <div>
+        <form action="login.php" method="get">
+            First Name
+            <br/>
+            <input type="text" name="firstname" value="Emrah" />
+            <br/> Last Name
+            <br/>
+            <input type="text" name="lastname" value="Öz" />
+            <br/> Gender
+            <br/>
+            <input type="radio" name="gender" value="Bay" /> Bay
+            <input type="radio" name="gender" value="Bayan" /> Bayan
+            <br/>
+            <br/> Yaş
+            <br/>
+            <input type="radio" name="yas" value="10_20" /> 10-20
+            <input type="radio" name="yas" value="20_30" /> 20-30
+            <input type="radio" name="yas" value="30__" /> 30+++
+            <br/> Car Model:
+            <select name="cartype">
+                <option value="1">Audi</option>
+                <option value="2">Volvo</option>
+                <option value="3">Mercedes</option>
+            </select>
+            <br/>
+            <input type="hidden" name="gizliid" value="23424324"/>
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+
+</html>

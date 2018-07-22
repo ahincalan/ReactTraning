@@ -1,0 +1,68 @@
+
+.tutulamayan50Hidden{
+    display: none;
+    background-color: blanchedalmond;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (min-width: 500px) 
+{ 
+    .tutulamayan50Hidden{
+        display: inline-block;
+        background-color: red;
+        width: 49%;
+        padding: 0px;
+        margin: 0px;
+    }
+} 
+
+
+@media (min-width: 1300px) 
+{ 
+    .tutulamayan50Hidden{
+        display: inline-block;
+        background-color: saddlebrown;
+        width: 30%;
+        padding: 0px;
+        margin: 0px;
+    }
+} 
+
+
+.tutulamayan50{
+    display: inline-block;
+    background-color: blanchedalmond;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (min-width: 1024px) 
+{ 
+    .tutulamayan50{
+        display: inline-block;
+        background-color: red;
+        width: 49%;
+        padding: 0px;
+        margin: 0px;
+    }
+} 
+
+
+@media (min-width: 1300px) 
+{ 
+    .tutulamayan50{
+        display: inline-block;
+        background-color: saddlebrown;
+        width: 30%;
+        padding: 0px;
+        margin: 0px;
+    }
+} 
+ 
+body{
+    padding: 0px;
+    margin: 0px;
+}
